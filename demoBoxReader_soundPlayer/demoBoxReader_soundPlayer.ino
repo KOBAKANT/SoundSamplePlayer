@@ -83,6 +83,7 @@ int mode[CHANNELNUMBER] = {0, 0, 0, 0};
 //-----------
 
 int playMode = 0;
+int lastPlayMode;
 //-----------
 // mode1: play trigger
 // mode0: play volume
@@ -270,7 +271,7 @@ void loop() {
         displayPixel(i, 3, trackNum[i]);
 
 
-        for (int t = 0; t < 400; t++) {
+        for (int t = 0; t < 500; t++) {
           B_buttonStatus[i] = digitalRead(B_Pin[i]);
           A_buttonStatus[i] = digitalRead(A_Pin[i]);
           if (B_buttonStatus[i] != last_B_buttonStatus[i] && !B_buttonStatus[i]) {
@@ -420,6 +421,12 @@ void printDirectory(File dir, int numTabs) {
 
 
 void musicPlayMode( int channelNum, int val) {
+  // if the mode has been changed, stop playing the sample
+if (playMode!=lastPlayMode){
+  musicPlayer.stopPlaying();
+}
+lastPlayMode=playMode;
+  
   switch (playMode) {
     case 1: // trigger
       if (val > 128) {
