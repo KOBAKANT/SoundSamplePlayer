@@ -75,3 +75,11 @@ Make sure to "normalize" the sound files so all the sound samples are in similar
 <h2>SCHEMATIC</H2>
 <a href="http://www.kobakant.at/KOBA/wp-content/uploads/2018/10/schematic.jpg"><img src="http://www.kobakant.at/KOBA/wp-content/uploads/2018/10/schematic-1024x714.jpg"  width="500"  /></a>
 download >><a href="http://www.kobakant.at/KOBA/wp-content/uploads/2018/10/schematic.pdf">schematic PDF</a>
+
+<hr>
+<strong>Material List</strong>
+<a href="https://www.pjrc.com/store/teensy35.html" rel="noopener" target="_blank">Teensy3.5</a>
+<a href="https://www.adafruit.com/product/1381" rel="noopener" target="_blank">VS1053 Codec + MicroSD Breakout - MP3/WAV/MIDI/OGG Play + Record - v4</a>
+<a href="https://www.adafruit.com/product/987" rel="noopener" target="_blank">Stereo 3.7W Class D Audio Amplifier - MAX98306</a>
+<a href="https://www.exp-tech.de/zubehoer/audio/5921/lautsprecher-3-durchmesser-4-ohm-3-watt">Lautsprecher - 3" Durchmesser - 4 Ohm 3 Watt</a>
+<a href="https://www.adafruit.com/product/1426">NeoPixel Stick</a> 
